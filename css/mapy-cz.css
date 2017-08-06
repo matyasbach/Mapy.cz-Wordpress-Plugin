@@ -1,0 +1,8 @@
+/**
+* Reset theme or other plugins css
+*/
+.mcz_map img {
+  border: none !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
