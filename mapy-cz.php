@@ -18,40 +18,44 @@ defined ( 'ABSPATH' ) or die ( 'No script kiddies please!' );
 class MapyCZ {
 
 	function __construct() {
-		$inc_path = plugin_dir_path ( __FILE__ ) . '/inc/';
+		$inc_path   = plugin_dir_path ( __FILE__ ) . '/inc/';
 		$admin_path = plugin_dir_path ( __FILE__ ) . '/admin/';
-  
-		$this->inc_list = array(
+
+		$this->languages_path = basename ( dirname( __FILE__ ) ) . '/languages/';
+		$this->inc_list       = array(
 			'admin'    => $admin_path . 'admin.php',
 			'front'    => $inc_path   . 'front.php',
 			'map_ajax' => $inc_path   . 'map-ajax.php',
 		);
 	}
-  
+
 	public function init() {
-		add_action( 'init', array ( $this, 'register_map_post_type' ) );
-		add_action( 'admin_init', function() {
+		add_action ( 'init', array ( $this, 'register_map_post_type' ) );
+		add_action ( 'admin_init', function() {
 				include_once $this->inc_list['admin'];
 				new Admin;
-		} );
-    
+		});
+		add_action ( 'plugins_loaded', function() {
+			load_plugin_textdomain( 'mapy-cz', false, $this->languages_path );
+		});
+
 		add_shortcode ( 'mcz_map', function( $atts ) {
 				include_once $this->inc_list['front'];
 				if( ! isset( $this->front ) ) {
 					$this->front = new Front;
 				}
 				return $this->front->mcz_map_shortcode( $atts );
-		} );
+		});
 
 		add_action ( 'wp_ajax_mapy-cz-get-map', array ( $this, 'get_maps' ) );
 		add_action ( 'wp_ajax_nopriv_mapy-cz-get-map', array ( $this, 'get_maps' ) );
 	}
-  
+
 	function get_maps() {
 		include_once $this->inc_list['map_ajax'];
 		get_maps_ajax();
 	}
-  
+
 	/**
 	 * Registers a Custom Post Type: map
 	*/

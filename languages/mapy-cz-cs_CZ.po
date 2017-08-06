@@ -1,0 +1,113 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mapy.cz\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-06 19:18+0000\n"
+"PO-Revision-Date: 2017-08-06 19:30+0000\n"
+"Last-Translator: maty <matyasbach@centrum.cz>\n"
+"Language-Team: Czech\n"
+"Language: cs-CZ\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: mapy-cz.php:65
+msgctxt "post type general name"
+msgid "Mapy.cz Maps"
+msgstr "Mapy.cz mapy"
+
+#: mapy-cz.php:66
+msgctxt "post type singular name"
+msgid "Mapy.cz Map"
+msgstr "Mapy.cz mapa"
+
+#: mapy-cz.php:67
+msgctxt "admin menu"
+msgid "Mapy.cz"
+msgstr "Mapy.cz"
+
+#: mapy-cz.php:68
+msgctxt "add new on admin bar"
+msgid "Mapy.cz Map"
+msgstr "Vytvořit mapu"
+
+#: mapy-cz.php:69
+msgctxt "sub menu"
+msgid "Add new"
+msgstr "Vytvořit mapu"
+
+#: mapy-cz.php:70
+msgid "Add new map"
+msgstr "Vytvořit novou mapu"
+
+#: mapy-cz.php:71
+msgid "New Map"
+msgstr "Vytvořit mapu"
+
+#: mapy-cz.php:72
+msgid "Edit Map"
+msgstr "Upravit mapu"
+
+#: mapy-cz.php:73
+msgid "View Map"
+msgstr "Zobrazit mapu"
+
+#: mapy-cz.php:74
+msgid "All Maps"
+msgstr "Všechny mapy"
+
+#: mapy-cz.php:75
+msgid "Search Maps"
+msgstr "Hledat mapy"
+
+#: mapy-cz.php:76
+msgid "Parent Maps:"
+msgstr "Nadřazené mapy:"
+
+#: mapy-cz.php:77
+msgid "No maps found."
+msgstr "Žádná mapa nenalezena."
+
+#: mapy-cz.php:78
+msgid "No maps found in Trash."
+msgstr "Žádná mapa v koši."
+
+#. id
+#: admin/edit-map.php:23
+msgid "Map options"
+msgstr "Obecné"
+
+#: admin/edit-map.php:36
+msgid "Map ID"
+msgstr "ID mapy"
+
+#: admin/edit-map.php:38
+msgid "Latitude"
+msgstr "Zeměpisná šířka"
+
+#: admin/edit-map.php:40
+msgid "Longitude"
+msgstr "Zeměpisná délka"
+
+#. Name of the plugin
+msgid "Mapy.cz"
+msgstr "Mapy.cz"
+
+#. Description of the plugin
+msgid "A plugin to display mapy.cz map"
+msgstr "Plugin k zobrazení interaktivních map mapy.cz"
+
+#. URI of the plugin
+msgid "https://github.com/matyasbach/Mapy.cz-Wordpress-Plugin"
+msgstr ""
+
+#. Author of the plugin
+msgid "Matyáš Bach"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "mailto://matyasbach@centrum.cz"
+msgstr ""
