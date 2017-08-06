@@ -50,7 +50,7 @@ class EditMapScreen {
 	function save_meta_boxes() {
 		// Check the logged in user has permission to edit this post
 		if ( ! current_user_can ( 'edit_post', $this->post_id ) ) {
-			return $this->$post_id;
+			return $this->post_id;
 		}
 
 		// OK to save meta data
